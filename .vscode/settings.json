@@ -38,5 +38,6 @@
     "raspberry-pi-pico.ninjaPath": "${HOME}/.pico-sdk/ninja/v1.12.1/ninja",
     "files.associations": {
         "string_view": "cpp"
-    }
+    },
+    "markdown.validate.enabled": true
 }
