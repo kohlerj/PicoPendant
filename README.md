@@ -6,7 +6,7 @@ Inspired by the [CNC-Pendant-Firmware](https://github.com/Duet3D/CNC-Pendant-Fir
 
 It is compatible with all versions of the Pico microcontroller RP2040 and RP2350. Obviously also compatible with the boards, that is Pico 1, Pico 2, Pico W and Pico 2W.
 
-This is the *only* the software side and some wiring instructions. We'll see if I can make a PCB for it in the future. For now you could try to reproduce [My BOM of the weekend ;)](#one-night-one-weekend-project) which ended up in the pendant you see below.
+This is the *only* the software side and some wiring instructions. We'll see if I can make a PCB for it in the future. For now you could try to reproduce [My BOM of the weekend ;)](https://github.com/kohlerj/PicoPendant?tab=readme-ov-file#one-night-project) which ended up in the pendant you see below.
 
 ![PicoPendant](./docs/pendant.png)
 
