@@ -1,0 +1,16 @@
+---
+# Use Google style as the base
+BasedOnStyle: Google
+
+# Set the indentation width to 2 spaces (Google style preference)
+IndentWidth: 2
+
+# Set the maximum line length
+ColumnLimit: 80
+
+# Optionally adjust brace breaking (Google attaches braces)
+BreakBeforeBraces: Attach
+
+# Optionally disable automatic include sorting
+SortIncludes: false
+...
