@@ -14,8 +14,8 @@ This is the *only* the software side and some wiring instructions. We'll see if 
 
 - Axis selection XYZ
 - Multiplier selection: 1X - 1mm, 10X - 0.1mm and 100X - 0.01mm
-- Homing by pushing Y for 2sec
-- Reset by pushing X for 2sec
+- Homing by holding Y for 2sec
+- Reset by holding X and Z for 2sec
 
 ## An "open" BOM
 
