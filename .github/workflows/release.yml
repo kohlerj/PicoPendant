@@ -6,6 +6,9 @@ on:
     tags:
       - 'v*.*.*'
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -54,8 +57,7 @@ jobs:
       run: cmake --build ${{ steps.strings.outputs.build-output-dir }} 
 
     - name: Release
-      uses: softprops/action-gh-release@v2
+      uses: softprops/action-gh-release@v2.2.1
       if: startsWith(github.ref, 'refs/tags/')
       with:
         files: ${{ steps.strings.outputs.build-output-dir }}/*.uf2
-        token: secrets.FGT_RELEASE
