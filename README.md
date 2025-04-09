@@ -129,3 +129,5 @@ You might need to clear up the button holes a little bit. I made them already la
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
+
+In contains code from the Pico examples repository under BSD-3 license. See the [LICENSE](LICENSE.txt) file for details.
