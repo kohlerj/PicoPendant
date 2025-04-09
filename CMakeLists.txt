@@ -24,7 +24,13 @@ if (EXISTS ${picoVscode})
     include(${picoVscode})
 endif()
 # ====================================================================================
-set(PICO_BOARD pico2 CACHE STRING "Board type")
+
+if (NOT DEFINED PICO_BOARD)
+    message(STATUS "PICO_BOARD not set, defaulting to pico2")
+    set(PICO_BOARD pico2 CACHE STRING "Board to build for")
+else()
+    message(STATUS "PICO_BOARD set to ${PICO_BOARD}")
+endif()    
 
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
@@ -39,7 +45,13 @@ add_executable(PicoPendant PicoPendant.cpp)
 pico_generate_pio_header(PicoPendant ${CMAKE_CURRENT_LIST_DIR}/quadrature_encoder.pio)
 
 pico_set_program_name(PicoPendant "PicoPendant")
-pico_set_program_version(PicoPendant "1.0")
+
+if (DEFINED ENV{PICO_VERSION})
+    set(PICO_VERSION $ENV{PICO_VERSION})
+else()
+    set(PICO_VERSION "0.0.0")
+endif()
+pico_set_program_version(PicoPendant ${PICO_VERSION})
 
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(PicoPendant 0)

@@ -45,7 +45,9 @@ jobs:
     - name: Configure CMake
       run: >
         cmake -B ${{ steps.strings.outputs.build-output-dir }}
-        -DPICO_BOARD=${{ matrix.cpp_compiler }}
+        -DPICO_BOARD=${{ matrix.board }}
+        -DPICO_SDK_PATH=${{ github.workspace }}/pico-sdk
+        -DCMAKE_BUILD_TYPE=Release
         -S ${{ github.workspace }}
 
     - name: Build
