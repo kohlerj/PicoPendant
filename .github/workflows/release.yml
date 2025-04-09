@@ -54,7 +54,10 @@ jobs:
         -S ${{ github.workspace }}
 
     - name: Build
-      run: cmake --build ${{ steps.strings.outputs.build-output-dir }} 
+      run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --target PicoPendant
+
+    - name: Rename binaries
+      run: cd ${{ steps.strings.outputs.build-output-dir }} && mv PicoPendant.uf2 PicoPendant_${{ matrix.board }}.uf2 && cd ..
 
     - name: Release
       uses: softprops/action-gh-release@v2.2.1
