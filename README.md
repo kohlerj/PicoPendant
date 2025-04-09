@@ -104,7 +104,7 @@ Link to [schematics](./docs/schematics.png)
 
 ### Case
 
-In the CAD folder, you'll find a STEP model of the case. The model includes built-in support and it is meant to be printed with a **layer height of .2mm**. It is a **multicolor** print. The letters need be printed in a translucent material while the case in an opaque one. 
+In the CAD folder, you'll find a STEP model of the case. The model includes built-in support and it is meant to be printed with a **layer height of .3mm**. It is a **multicolor** print. The letters need be printed in a translucent material while the case in an opaque one. 
 
 If you do not have a multicolor printer, do the following:
 1. Load the model with ALL subparts
