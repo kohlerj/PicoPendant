@@ -21,13 +21,13 @@ This is the *only* the software side and some wiring instructions. We'll see if 
 
 A board (protoboard, PCB or some Frankenstein solution) with the following components:
 - 1x Raspberry Pico (or compatible)
-- 6x buttons with a normally open contact
-- 6x LEDs with adequate resistors
+- 6x buttons with a normally open contact - e.g. https://www.aliexpress.com/item/32815260070.html
+- 6x 5mm LEDs with adequate resistors - e.g. https://www.aliexpress.com/item/1005003144912658.html
 - 1x Schottky diode (1N5819 or similar) - I'd say above 500mA to be safe, Vf as low as possible
 - 2x logic level shifters to shift the encoder 5V A/B signals to 3.3V. I used LTV-817 optocouplers because it's what I had on hand. I guess a simple voltage divider would work if anything.
 
 Aside from that you'll need:
-- 1x 5V rotary encoder see here: 
+- 1x 5V rotary encoder - e.g. https://www.aliexpress.com/item/1005008202737088.html
 - A case, 3D printed most probably
 - wires, cables, connectors and some screws
 
@@ -58,15 +58,15 @@ I did not want to wait for a PCB so I went ahead a built a prototype on a protob
 
  I used the following components:
 
-- 1x protoboard 50x70mm
-- 1x Pico 2 board
-- 6x buttons
-- 6x LEDs with 100Ohm for the blue and 220Ohm resistors for the green LEDs
-- 1x Schottky diode (1N5819)
-- 2x LTV-817 DIP-4 optocouplers with 2x 1k resistors for the photodiode side
-- 1x 5V rotary encoder, see above
-- 1x PG-7 gland
-- 1x 3-pin fake *ODU*-like connector
+- 1x protoboard 50x70mm, https://www.aliexpress.com/item/1005001854661430.html
+- 1x Pico 2 board, https://www.digikey.ch/short/4wzqqnww
+- 6x buttons, https://www.aliexpress.com/item/32815260070.html
+- 6x LEDs with 100Ohm for the blue and 220Ohm resistors for the green LEDs, https://www.aliexpress.com/item/1005003144912658.html
+- 1x Schottky diode (1N5819), https://www.digikey.ch/short/5j751j2j
+- 2x LTV-817 DIP-4 optocouplers with 2x 1k resistors for the photodiode side, https://www.digikey.ch/short/rwcv58q7
+- 1x 5V rotary encoder, https://www.aliexpress.com/item/1005008202737088.html
+- 1x PG-7 gland, https://www.aliexpress.com/item/1005003296249352.html
+- 1x 3-pin fake *ODU*-like connector, https://www.aliexpress.com/item/1005002002825883.html
 - 4x 2x8mm self-tapping screws
 - 6x 3x8mm self-tapping screws
 - wires, cables, connectors
